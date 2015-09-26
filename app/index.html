@@ -1,18 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
+	<!-- IE последней версии -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Корректное масштабирование для адаптива -->
+	<!-- meta name="viewport" content="width=device-width, initial-scale=1" -->
+	<title>Николай Игнатьев портфолио</title>
+	<!-- SEO -->
+	<meta name="description" content="Nikolay Ignatev portfolio">
+	<meta name="keywords" content="front end portfolio">
+	<meta name="author" content="Nikolay Ignatev">
 	<title></title>
 	<!--CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>		
-	<h1 class="header">Header to change</h1>
-	<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde deserunt earum ullam alias voluptatibus molestiae rerum vitae laudantium, labore, facere eveniet temporibus error veniam, eius quae consequuntur accusamus quos. Consequuntur.</p>
+<body>
+	<!-- [if lt IE 7]>
+	<p class="browsehappy">Вы используете <strong>устаревший</strong>браузер.Пожалуйста, <a href="http://browsehappy.com">обновите</a> его.</p>
+	<![endif]-->
 	
-	<!--JS -->
+	<div class="wrapper">
+		<div class="main-content">
+			
+			<header class="page-header">
+				<div class="container-big">
+					<a class="header-logo-link"><img src="img/logo.png" alt="logo" class="logo-img">
+						<span class="header-logo-text">Сайт портфолио</span>
+					</a>
+					<ul class="socials">
+						<li class="social-item">
+							<a href="https://vk.com/id451584" target="_blank" class="socials-link vk">
+								vk.com/id451584
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://twitter.com/cyb3rD" target="_blank" class="socials-link tw">
+								twitter.com/cyb3rD
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://www.facebook.com/noilgt" target="_blank" class="socials-link fb">
+								www.facebook.com/noilgt
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://github.com/cyb3rD" target="_blank" class="socials-link gh">
+								github.com/cyb3rD
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="lock"><a href="/login.html" class="lock-inner">Войти</a></div>
+			<div class="copyright">&copy; 2015 Это сайт Николая Игнатьева, пожалуйста, некопируйте и не воруйте его.</div>
+		</div>	
+	</footer>
+
+	<!-- Vendor JS -->
 	<script src="bower/jquery/jquery.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
-</html>
