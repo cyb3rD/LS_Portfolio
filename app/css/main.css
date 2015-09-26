@@ -3,7 +3,7 @@ html {
 }
 body {
 	height: 100%;
-	background: url(../img/comppattern2.png) repeat;
+	background: url('../img/background.png') repeat;
 	font: normal 1em 'fira_sanslight';
 	color: #4a545d;
 }
@@ -11,7 +11,7 @@ body {
 .wrapper {
 	position: relative;
 	min-height: 100%;
-	min-width: 960px;
+	min-width: 970px; /* ограничение ширины экрана + 10px к min-width*/
 	height: auto!important;
 }
 /* Прибъем футер к низу*/
@@ -43,8 +43,89 @@ body {
 .container:after, .clearfix:after {
 	clear: both;
 }
+
+.container-big {
+	max-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+/* HEADER */
+.page-header {
+	height: 119px;
+	background: #eff3f7 url('../img/gradient-line.png') bottom center no-repeat;
+	position: relative;
+	margin-bottom: 39px;
+}
+.page-header .header-logo-link {
+	position: absolute;
+	top: 39px;
+	left: 0px;
+}
+.page-header .header-logo-text {
+	position: absolute;
+	left: -9999px; /* hide text */
+}
+.page-header .socials {
+	position: absolute;
+	top: 36px;
+	right: 0;
+}
+/* Social icons*/
+.socials {
+	margin: 0px;
+	padding: 0px;
+	min-width: 260px;
+}
+.socials .social-item {
+	list-style: none;
+	display: inline-block;
+	height: 47px;
+	width: 47px;
+	margin-left: 19px;
+}
+.socials .social-item:first-child {
+	margin-left: 0px;
+}
+.socials .socials-link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-indent: -9999px;
+	background: url('../img/spritesheet.png') no-repeat;
+}
+.socials .socials-link.vk { 
+	background-position: -5px -119px;
+}
+.socials .socials-link.vk:hover {
+    background-position: -62px -119px;
+}
+.socials .socials-link.fb {
+    background-position: -5px -5px;
+}
+.socials .socials-link.fb:hover {
+    background-position: -62px -5px;
+}
+.socials .socials-link.gh {
+    background-position: -5px -62px;
+}
+.socials .socials-link.gh:hover {
+    background-position: -62px -62px;
+}
+.socials .socials-link.tw {
+    background-position: -119px -5px;
+}
+.socials .socials-link.tw:hover {
+    background-position: -119px -62px;
+}
+
+
+
+
 /* FOOTER */
 .page-footer {
+	min-width: 970px;
 	height: 80px;
 	margin-top: -80px;
 	background: #eff3f7 url('../img/gradient-line.png') top center no-repeat; 
