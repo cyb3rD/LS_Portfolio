@@ -1,0 +1,83 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	background: url(../img/comppattern2.png) repeat;
+	font: normal 1em 'fira_sanslight';
+	color: #4a545d;
+}
+/* content of the page */
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	min-width: 960px;
+	height: auto!important;
+}
+/* Прибъем футер к низу*/
+.wrapper:after {
+	content: "";
+	height: 80px;
+	display:block;
+}
+/* Общие классы */
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+.text-center {
+	text-align: center;
+}
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+/* CLEAR FIX */
+.container:before, .clearfix:before,
+.container:after, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.container:after, .clearfix:after {
+	clear: both;
+}
+/* FOOTER */
+.page-footer {
+	height: 80px;
+	margin-top: -80px;
+	background: #eff3f7 url('../img/gradient-line.png') top center no-repeat; 
+	color: #4a545d;
+}
+.page-footer .container {
+	padding-top: 23px;
+	position: relative;
+}
+.page-footer .copyright {
+	margin: 0 180px;
+	padding-top: 7px;
+	text-align: center;
+	font-size: 13px;
+}
+.page-footer .lock {
+	position: absolute;
+	top: 26px;
+	left: 20px;
+}
+
+/* Логиновка в футере */
+.lock .lock-inner {
+	padding-left: 25px;
+	display: block;
+	height: 40px;
+	font-size: 16px;
+	line-height: 2.2;
+	color: #4a545d;
+	text-decoration: none;
+	background: url('../img/locked.png') no-repeat;
+}
+.lock .lock-inner:hover {
+	text-decoration: underline;
+	background: url('../img/unlocked.png') no-repeat;
+}
