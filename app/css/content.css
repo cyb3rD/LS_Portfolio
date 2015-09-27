@@ -1,0 +1,96 @@
+@font-face {
+  font-family: ProximaNova-Semibold;
+  src: url('../fonts/Proxima-Nova/ProximaNova-Semibold.otf') format("opentype");
+}
+.aboutbox {
+	background: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+.aboutbox .aboutbox-header {
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+	color: #3ba8c0;
+	border-bottom: 2px #3ba8c0 solid;
+	margin: 0 0 23px 0;
+	padding: 13px 23px;
+	display: inline-block;
+}
+.aboutbox-body {
+	padding-bottom: 40px;
+}
+.image-wrap {
+	float: left;
+	margin-left: 55px;
+	margin-top: 18px;
+}
+.avatar-box {
+	width: 142px;
+	height: 142px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 5px solid #3ba8c0;
+}
+.avatar {
+	width: 100%;
+}
+
+.worksheet-wrap {
+	float: right;
+	width: 415px;
+}
+.worksheet-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.worksheet-item {
+	margin-bottom: 5px;
+}
+.worksheet-info {
+	float: left;
+	font-family: 'fira_sansmedium';
+	font-size: 17px;
+	overflow: hidden;
+	max-width: 210px;
+}
+
+.worksheet-details {
+	font-family: 'fira_sansbook';
+	font-size: 15px;
+	margin-left: 20px;
+	max-width: 218px;
+	float: left;
+}
+.skills {
+	font-family: 'ProximaNova-Semibold';
+	font-size: 14px;
+}
+.skills-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+}
+.skill-item {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3ba8c0+0,2e8ca2+100 */
+	background: #3ba8c0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #3ba8c0 0%, #2e8ca2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3ba8c0), color-stop(100%,#2e8ca2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #3ba8c0 0%,#2e8ca2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #3ba8c0 0%,#2e8ca2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #3ba8c0 0%,#2e8ca2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #3ba8c0 0%,#2e8ca2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8ca2',GradientType=0 ); /* IE6-9 */
+
+	border-radius: 2px;
+	padding: 0 7px;
+	margin-right: 6px;
+	margin-top: 6px;
+	color: white;
+	display: inline-block;
+	line-height: 1.2;
+	min-width: 40px;
+	text-align: center;
+}

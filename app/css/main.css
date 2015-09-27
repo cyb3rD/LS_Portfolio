@@ -219,6 +219,10 @@ body {
 .contacts .contacts-text {
 	line-height: 45px;	
 }
+.content-area {
+	width: 650px;
+	float: right;
+}
 /* FOOTER */
 .page-footer {
 	min-width: 970px;
