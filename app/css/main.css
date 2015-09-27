@@ -119,10 +119,106 @@ body {
 .socials .socials-link.tw:hover {
     background-position: -119px -62px;
 }
-
-
-
-
+ /* Sidebar */
+ .sidebar {
+ 	width: 250px;
+ 	float: left;
+ }
+ /* Navigation */
+ .navigation {
+ 	overflow: hidden;
+ 	background: #eff3f7;
+ 	border-radius: 4px;
+ 	margin-bottom: 26px;
+ }
+ .navigation .navigation-list {
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ }
+.navigation .navigation-item {
+	border-top: 2px solid #3ba8c0;
+	margin: 0 11px; /* space left-right*/
+}
+.navigation .navigation-item:first-child {
+	border-top: none;
+}
+.navigation .navigation-item.current {
+	background: #3ba8c0;
+	margin: 0;
+	border-bottom: none;
+	padding-left: 11px;
+	margin-bottom: -2px; /*Hide bottom border of the current menu item*/
+}
+.navigation .navigation-item.current .navigation-link {
+	color: #f9fafb;
+	font-size: 22px;
+}
+.navigation .navigation-link {
+	font-family: 'fira_sansbook';
+	display: block;
+	font-size: 20px;
+	text-decoration: none;
+	color: #959aa8;
+	margin-left: 16px;
+	padding: 20px 0px;
+}
+.navigation .navigation-link:hover {
+	color: #3ba8c0;
+}
+/* Contacts Block */
+.contacts {
+	overflow: hidden;
+	width: 250px;
+	float: left;
+	border-radius: 4px;
+}
+.contacts-header {
+	height: 40px;
+	background-color: #3ba8c0;
+	color: white;
+}
+.contacts-header .header-inner-text {
+	font-family: 'fira_sansbook';
+	font-style: normal;
+	display: block;
+	font-size: 20px;
+	margin-left: 16px;
+	line-height: 45px;
+}
+.contacts .contacts-list {
+	margin: 0;
+	padding: 0;
+}
+.contacts .contacts-link {
+	text-decoration: none;
+	font-style: normal;
+	font-size: 17px;
+	color: white;
+}
+.contacts .contacts-link:hover {
+	text-decoration: underline;
+}
+.contacts-item {
+	height: 35px;
+	padding-left: 83px;
+	padding-top: 5px;
+}
+.contacts-item.contacts-item-mail {
+	background: #41b9d4 url('../img/mail.png') no-repeat;
+	background-position: 40px 10px;
+}
+.contacts-item.contacts-item-phone {
+	background: #48cbe8 url('../img/phone.png') no-repeat;
+	background-position: 40px 10px;
+}
+.contacts-item.contacts-item-skype {
+	background: #51daf8 url('../img/skype.png') no-repeat;
+	background-position: 40px 10px;
+}
+.contacts .contacts-text {
+	line-height: 45px;	
+}
 /* FOOTER */
 .page-footer {
 	min-width: 970px;
