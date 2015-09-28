@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "browser-sync": "^2.9.6",
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "modernizr": "^3.0.0"
   }
 }
