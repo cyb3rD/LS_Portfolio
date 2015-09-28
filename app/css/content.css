@@ -71,6 +71,7 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	max-width: 210px;
 	
 }
 .skill-item {
@@ -109,6 +110,12 @@
 
 .work {
 	background-image: url('../img/work.png');
+}
+.course {
+	background-image: url('../img/courses.png')
+}
+.education {
+	background-image: url('../img/learn.png')
 }
 .title {
 	margin-left: 65px; 

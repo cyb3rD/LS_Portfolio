@@ -216,9 +216,11 @@ body {
 	background: #51daf8 url('../img/skype.png') no-repeat;
 	background-position: 40px 10px;
 }
-.contacts .contacts-text {
-	line-height: 45px;	
+.contacts .contact-text {
+	/* для длинной строки */
+	white-space: nowrap;
 }
+/* CONTENT area */
 .content-area {
 	width: 650px;
 	float: right;
