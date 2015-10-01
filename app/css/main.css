@@ -63,6 +63,11 @@ body {
 	top: 39px;
 	left: 0px;
 }
+.page-header .header-logo-link:hover,
+.page-header .header-logo-link:active,
+.page-header .header-logo-link:focus {
+
+}
 .page-header .header-logo-text {
 	position: absolute;
 	left: -9999px; /* hide text */
@@ -98,25 +103,33 @@ body {
 .socials .socials-link.vk { 
 	background-position: -5px -119px;
 }
-.socials .socials-link.vk:hover {
+.socials .socials-link.vk:hover,
+.socials .socials-link.vk:active,
+.socials .socials-link.vk:focus {
     background-position: -62px -119px;
 }
 .socials .socials-link.fb {
     background-position: -5px -5px;
 }
-.socials .socials-link.fb:hover {
+.socials .socials-link.fb:hover,
+.socials .socials-link.fb:active,
+.socials .socials-link.fb:focus {
     background-position: -62px -5px;
 }
 .socials .socials-link.gh {
     background-position: -5px -62px;
 }
-.socials .socials-link.gh:hover {
+.socials .socials-link.gh:hover,
+.socials .socials-link.gh:active,
+.socials .socials-link.gh:focus {
     background-position: -62px -62px;
 }
 .socials .socials-link.tw {
     background-position: -119px -5px;
 }
-.socials .socials-link.tw:hover {
+.socials .socials-link.tw:hover,
+.socials .socials-link.gh:active,
+.socials .socials-link.gh:focus {
     background-position: -119px -62px;
 }
  /* Sidebar */
@@ -163,7 +176,16 @@ body {
 	margin-left: 16px;
 	padding: 20px 0px;
 }
+/* Стилизация ссылок навигации */
 .navigation .navigation-link:hover {
+	color: #3ba8c0;
+}
+.navigation .navigation-link:active {
+	color: #3ba8c0;
+	font-size: 18px;
+	padding: 22px 0px;
+}
+.navigation .navigation-link:focus {
 	color: #3ba8c0;
 }
 /* Contacts Block */
@@ -196,9 +218,13 @@ body {
 	font-size: 17px;
 	color: white;
 }
-.contacts .contacts-link:hover {
+/*Ситилзуем все состояния ссылок*/
+.contacts .contacts-link:hover,
+.contacts .contacts-link:active,
+.contacts .contacts-link:focus  {
 	text-decoration: underline;
 }
+
 .contacts-item {
 	height: 35px;
 	padding-left: 83px;
@@ -260,7 +286,9 @@ body {
 	text-decoration: none;
 	background: url('../img/locked.png') no-repeat;
 }
-.lock .lock-inner:hover {
+.lock .lock-inner:hover,
+.lock .lock-inner:active,
+.lock .lock-inner:focus, {
 	text-decoration: underline;
 	background: url('../img/unlocked.png') no-repeat;
 }
