@@ -15,7 +15,7 @@
 	<!--CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/content.css">
+	<link rel="stylesheet" href="css/contacts.css">
 	<!-- Fonts & favicon -->
 	<link rel="stylesheet" href="fonts/fira/fira.css">
 	<link rel="icon" type="image/png" href="img/favicon.png">
@@ -81,9 +81,38 @@
 			</aside>
 			
 			<div class="content-area">
-				<section class="aboutbox">
-					<h2 class="aboutbox-header">Мои контакты</h2>
-					<p>Раздел в стадии наполнения</p>
+				<section class="contact-me">
+					<h2 class="contact-me-header">У вас интересный проект? Напишите мне</h2>
+					<form class="contact-form" method="post" name="contact_form">
+					<div class="top-area clearfix">
+						<div class="area-name">
+							<span class="field-text">Имя</span><input class="text" type="text" placeholder="Как к вам обращаться">
+						</div>
+						<div class="area-address">
+							<span class="field-text">E-mail</span><input class="text" type="text" placeholder="Куда мне писать">
+						</div>
+					</div>
+						
+						<div class="area-message clearfix">
+							<span class="field-text">Сообщение</span><input class="text message" type="text" placeholder="Кратко в чем суть">
+						</div>
+						
+						<div class="area-capture clearfix">
+							<span class="field-text">Введите код, укзанный на картнике</span>
+							<div class="capture">
+								<span class="img-capture">Capture</span>
+							</div>
+							<div class="capture-code">
+								<input class="text capture-code" type="text" placeholder="Введите код">
+							</div>
+						</div>
+
+						<div class="area-buttons clearfix">
+							<button class="button button-send" type="submit" value="Submit">Отправить</button>
+							<button class="button button-clear" type="submit" value="Clear">Очитстить</button>
+						</div>
+						
+					</form>
 				</section>
 			</div>
 		</div>

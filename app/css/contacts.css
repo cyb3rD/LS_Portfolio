@@ -1,0 +1,119 @@
+/* contact form */
+.top-area {
+	margin-bottom: 22px;
+}
+.area-capture {
+	width: 100%;
+	margin-bottom: 22px;
+}
+.area-name {
+	width: 178px;
+	float: left;
+}
+.area-address {
+	width: 178px;
+	float: right;
+}
+.area-message {
+	width: 400px;
+	margin-bottom: 22px;
+}
+.area-buttons {
+}
+.contact-form {
+	margin: auto;
+	width: 400px;
+}
+.contact-me {
+ float: right;
+ min-width: 650px;
+ min-height: 840px;
+ background: #eff3f7;
+ margin-bottom: 40px;
+ font-family: 'fira_sanslight';
+}
+.field-text {
+	display: block;
+	font-size: 19px;
+	color: #959aa8;
+}
+:-moz-placeholder {
+    color: #48cbe8;;
+}
+::-webkit-input-placeholder {
+    color: #48cbe8;;
+}
+.contact-me-header {
+	height: 122px;
+	margin: 0px;
+	margin-bottom: 46px;
+	padding: 0px;
+	background: #48cbe8;
+	line-height: 122px;
+	text-align: center;
+	color: white;
+	border-bottom: 17px solid #67dffa;
+}
+.contact-form .text {
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	height: 40px;
+	width: 100%;
+	color: #48cbe8;
+	font-size: 13px;
+	padding-left: 12px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	
+}
+
+.contact-form .message {
+	/* TODO:
+	выровнять текст в верхнем углу?
+	*/
+	height: 184px;
+}
+.capture {
+	display: block;
+	float: left;
+	margin: 0px;
+	height: 80px;
+	width: 190px;
+	color: #48cbe8;
+	font-size: 13px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	padding-left: 12px;
+}
+.capture-code {
+	float: right;
+	width: 190px;
+}
+.button {
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: white;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+
+.button-send {
+	float: left;
+	background-color: #48cbe8;
+	border: 1px solid #48cbe8;
+}
+
+.button-clear {
+	float: right;
+	background-color: #849db5;
+	border: 1px solid #849db5;
+}
+.button-clear:hover {
+	background-color: #48cbe8;
+	border: 1px solid #48cbe8;
+}
