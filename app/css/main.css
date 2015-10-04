@@ -288,7 +288,7 @@ body {
 }
 .lock .lock-inner:hover,
 .lock .lock-inner:active,
-.lock .lock-inner:focus, {
+.lock .lock-inner:focus {
 	text-decoration: underline;
 	background: url('../img/unlocked.png') no-repeat;
 }
