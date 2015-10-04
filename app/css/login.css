@@ -1,0 +1,74 @@
+/* Login page*/
+:-moz-placeholder {
+    color: #48cbe8;;
+}
+::-webkit-input-placeholder {
+    color: #48cbe8;;
+}
+.login-form {
+	margin: auto;
+	width: 590px;
+	height: 490px;
+	background: #eff3f7;
+
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+
+	border-radius: 5px;
+}
+.login-header {
+	height: 106px;
+	margin: 0px;
+	margin-bottom: 46px;
+	padding: 0px;
+	background: #48cbe8;
+	line-height: 122px;
+	text-align: center;
+	color: white;
+	font-family: 'fira_sansbook';
+	font-size: 40px;
+	font-weight: normal;
+	border-bottom: 17px solid #67dffa;
+}
+.input-area {
+	width: 420px;
+	margin: auto;
+}
+.text-label {
+	text-align: center;
+	font-family: 'fira_sanslight';
+	font-size: 36px;
+	font-weight: normal;
+	color: #959aa8;
+	margin-bottom: 5px;
+}
+.input-text {
+		box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	height: 40px;
+	width: 100%;
+	color: #48cbe8;
+	font-size: 17px;
+	padding-left: 20px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+.button-login {
+	margin: 0 auto;
+	margin-top: 30px;
+	width: 220px;
+	height: 55px;
+	font-family: 'fira_sansbook';
+	font-size: 36px;
+	color: white;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+	background-color: #48cbe8;
+	border: 1px solid #48cbe8;
+}
