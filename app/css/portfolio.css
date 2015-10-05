@@ -31,9 +31,13 @@
 	border: 2px solid #3ba8c0;
 	border-radius: 4px;
 }
+
 .img-preview {
 	height: 120px;
 	width: 100%;
+}
+.img-preview:hover {
+	cursor: pointer;
 }
 .project-link {
 	font: italic 13px 'fira_sanslight';
@@ -47,14 +51,33 @@
 	border: 2px dashed #3ba8c0;
 	border-radius: 4px;
 	width: 180px;
-	height: 86px;
+	height: 125px;
 	text-align: center;
 	font: normal 13px 'fira_sanslight';
 	color: #3ba8c0;
 	background: #edf8fc;
+	background-image: url('../img/add-project.png');
+	background-repeat: no-repeat;
+	background-position: center center;
 	margin: auto;
-	padding: 34px 0px 0px 0px;
+	padding: 0;
+	/*padding: 34px 0px 0px 0px;*/
 }
+.add-project {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	margin-top: 90px;
+}
+.project.new:hover {
+	cursor: pointer;
+	background-color: white;
+	background-image: url('../img/add-project.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
 .wrap-img-addproject {
 	width: 32px;
 	height: 32px;

@@ -1,0 +1,93 @@
+/* Login page*/
+:-moz-placeholder {
+    color: #48cbe8;;
+}
+::-webkit-input-placeholder {
+    color: #48cbe8;;
+}
+.add-project-form {
+	margin: auto;
+	overflow: hidden;
+	width: 360px;
+	height: 490px;
+	background: #eff3f7;
+
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+
+	border-radius: 5px;
+}
+.add-project-header {
+	height: 40px;
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 0px;
+	padding-left: 10px;
+	background: #48cbe8;
+	line-height: 44px;
+	color: white;
+	font-family: 'fira_sansregular';
+	font-size: 25px;
+	font-weight: normal;
+	border-bottom: 10px solid #67dffa;
+	background-image: url('../img/close-button.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+}
+.input-area {
+	width: 320px;
+	margin: auto;
+}
+.text-label {
+	text-align: left;
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	font-weight: normal;
+	color: #959aa8;
+	margin-bottom: 5px;
+}
+.input-text {
+		box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	height: 40px;
+	width: 100%;
+	color: #48cbe8;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	font-weight: normal;
+	padding-left: 10px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+.input-text.upload-image {
+	background-image: url('../img/upload-image.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.about-project {
+	padding-top: 10px;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 5px;
+}
+.button-wrap {
+	text-align: center;
+}
+.button-add {
+	margin: 0 auto;
+	width: 140px;
+	height: 30px;
+	font-family: 'fira_sansbook';
+	font-size: 19px;
+	color: white;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+	background-color: #48cbe8;
+	border: 1px solid #48cbe8;
+}
