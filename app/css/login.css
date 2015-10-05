@@ -6,7 +6,8 @@
     color: #48cbe8;;
 }
 .login-form {
-	margin: auto;
+	left: 5000px;
+	/*margin: auto;*/
 	width: 590px;
 	height: 490px;
 	background: #eff3f7;
