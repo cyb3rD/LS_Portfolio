@@ -6,7 +6,7 @@
     color: #48cbe8;;
 }
 .add-project-form {
-	margin: auto;
+	display: none;
 	overflow: hidden;
 	width: 360px;
 	height: 490px;
@@ -47,26 +47,21 @@
 	color: #959aa8;
 	margin-bottom: 5px;
 }
-.input-text {
-		box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-
+.input {
 	height: 40px;
-	width: 100%;
 	color: #48cbe8;
 	font-family: 'fira_sanslight';
 	font-size: 13px;
-	font-weight: normal;
 	padding-left: 10px;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
 	margin-bottom: 5px;
 }
-.input-text.upload-image {
-	background-image: url('../img/upload-image.png');
-	background-repeat: no-repeat;
-	background-position: right center;
+.input-text {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
 }
 .about-project {
 	padding-top: 10px;
@@ -90,4 +85,34 @@
 	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
 	background-color: #48cbe8;
 	border: 1px solid #48cbe8;
+}
+/* котнтейнер для формы загрузки картинки*/
+.upload-image-form { 
+    color: #48cbe8;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
+	background: white;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	margin-bottom: 5px;
+}
+ /* Фэйковая кнопка загрузки файла */
+ .upload-image-form .upload-button { 
+	padding-left: 10px;
+    line-height: 40px;
+    background-image: url('../img/upload-image.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+	height: 100%;
+}
+ /* Реальная прозрачная форма*/
+.upload-image-form .hidden-form{
+    opacity: 0;
+    filter: alpha(opacity:0);
+    position: absolute;
+
+    margin-top: -39px;
+    margin-left: 255px;
+    height: 40px;
+    width: 55px;
 }

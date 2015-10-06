@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/content.css">
 	<link rel="stylesheet" href="css/portfolio.css">
+	<link rel="stylesheet" href="css/add-project.css">
 	<!-- Fonts & favicon -->
 	<link rel="stylesheet" href="fonts/fira/fira.css">
 	<link rel="icon" type="image/png" href="img/favicon.png">
@@ -31,7 +32,25 @@
 	
 	<div class="wrapper">
 		<!-- Begin Add Project Form -->
-
+		<form class="add-project-form" method="post" name="login_form">
+			<div class="add-project-header">Добавление проекта</div>
+			<div class="input-area">
+				<div class="text-label">Название проекта</div>
+				<input class="input input-text" type="text" placeholder="Введите название">
+				<div class="text-label">Картинка проекта</div>
+				<div class="upload-image-form">
+					<div class="upload-button">Загрузите изображение</div>
+						<input class="hidden-form" type="file" name="upload">
+				</div>
+				<div class="text-label">URL проекта</div>
+				<input class="input input-text" type="text" placeholder="Добавьте ссылку">
+				<div class="text-label">Описание</div>
+				<textarea class="input input-text about-project" placeholder="Пара слов о вашем проекте"></textarea>
+				<div class="button-wrap">
+					<button class="button-add" type="submit" value="Submit">Добавить</button>
+				</div>
+			</div>
+		</form>
 		<!-- End Add project Form -->
 		<div class="main-content">
 			
@@ -141,7 +160,7 @@
 								</li>
 								<li class="project new">
 									<span class="add-project">Добавить проект</span>
-									<a  href="add-project.html"></a>
+									<a  href="#"></a>
 								</li>
 							</ul>
 						</div>
@@ -163,5 +182,5 @@
 	<!-- Vendor JS -->
 	<script src="bower/jquery/jquery.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
-	<script src="js/addproject.js"></script>
+	<script src="js/add-project.js"></script>
 </body>
