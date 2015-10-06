@@ -19,12 +19,12 @@
 	border-radius: 5px;
 }
 .login-header {
-	height: 106px;
+	height: 90px;
 	margin: 0px;
-	margin-bottom: 46px;
+	margin-bottom: 20px;
 	padding: 0px;
 	background: #48cbe8;
-	line-height: 122px;
+	line-height: 90px;
 	text-align: center;
 	color: white;
 	font-family: 'fira_sansbook';
@@ -40,7 +40,6 @@
 	text-align: center;
 	font-family: 'fira_sanslight';
 	font-size: 36px;
-	font-weight: normal;
 	color: #959aa8;
 	margin-bottom: 5px;
 }
@@ -48,8 +47,10 @@
 		box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-
-	height: 40px;
+	/*выравнивать текст паддингами*/
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-bottom: 15px;
 	width: 100%;
 	color: #48cbe8;
 	font-size: 17px;
