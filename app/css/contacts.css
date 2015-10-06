@@ -73,9 +73,7 @@
 }
 
 .contact-form .message {
-	/* TODO:
-	выровнять текст в верхнем углу?
-	*/
+	padding-top: 10px;
 	height: 184px;
 }
 .capture {

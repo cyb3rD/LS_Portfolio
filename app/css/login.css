@@ -6,8 +6,7 @@
     color: #48cbe8;;
 }
 .login-form {
-	left: 5000px;
-	/*margin: auto;*/
+	display: none;
 	width: 590px;
 	height: 490px;
 	background: #eff3f7;
@@ -15,7 +14,7 @@
 	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
-
+	overflow: hidden;
 	border-radius: 5px;
 }
 .login-header {
