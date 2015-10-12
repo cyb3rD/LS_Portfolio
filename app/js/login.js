@@ -41,7 +41,12 @@ var myFormAction = (function() {
 				},
 				position: position,
 				style: {
-					classes: 'qtip-rounded my-qtip-class'
+					classes: 'qtip-rounded my-qtip-class',
+					tip: {
+            			corner: true,
+            			height: 9,
+            			width: 10
+        			}
 				}
 			}).trigger('show');
 			// change background of input field !!! change placholder style color
