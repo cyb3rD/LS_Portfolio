@@ -101,4 +101,17 @@ $("form").submit(function (e) {
 		// Here need to fire-up standart submit
 	};
 });
+
+// Show placeholder for the old IE
+$(document).ready(function() {
+
+	if (!Modernizr.input.placeholder) {
+		$('input, textarea').placeholder();
+		//Label as placeholder for IE<9
+		$('.pwd-label').addClass('show-label');
+		$('.pwd-label').on('click', function() {
+			$('.pwd-label').removeClass('show-label');
+		});
+	}
 	
+});	

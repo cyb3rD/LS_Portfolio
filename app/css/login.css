@@ -84,3 +84,13 @@
 	background-color: #48cbe8;
 	border: 1px solid #48cbe8;
 }
+.pwd-label {
+	display:none;
+	position: absolute;
+	color: #48cbe8;
+	padding-top: 18px;
+	padding-left: 20px;
+}
+.show-label {
+	display: block;
+}

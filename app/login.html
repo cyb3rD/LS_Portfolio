@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="fonts/fira/fira.css">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 
-	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
 	
 </head>
 <body>
@@ -39,7 +39,8 @@
 				<div class="text-label">Логин</div>
 				<input id="login" class="input-text" qtip-position="left" qtip-content="введите логин" type="text" placeholder="Введите логин">
 				<div class="text-label">Пароль</div>
-				<input id="password" class="input-text" qtip-position="left" qtip-content="введите пароль" type="password" placeholder="Введите пароль">
+				<label for="pwd" class="pwd-label">Введите пароль</label>
+				<input id="pwd" class="input-text" qtip-position="left" qtip-content="введите пароль" type="password" placeholder="Введите пароль">
 				<div class="text-label">
 				<button class="button-login" type="submit" value="Submit">Войти</button>
 				</div>
@@ -59,5 +60,6 @@
 	<script src="bower/jquery/jquery.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
 	<script src="bower/qTip2/jquery.qtip.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
 	<script src="js/login.js"></script>
 </body>
