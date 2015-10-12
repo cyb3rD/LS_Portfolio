@@ -5,5 +5,8 @@
     "browser-sync": "^2.9.6",
     "gulp": "^3.9.0",
     "modernizr": "^3.0.0"
+  },
+  "dependencies": {
+    "qtip2": "^2.2.0"
   }
 }

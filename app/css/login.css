@@ -5,6 +5,17 @@
 ::-webkit-input-placeholder {
     color: #48cbe8;;
 }
+.error {
+	border: 2px solid #f97e76 !important;
+	background: #fdd5d2;
+	
+}
+.error:-moz-placeholder {
+    color: #bec0c8;;
+}
+.error::-webkit-input-placeholder {
+    color: #bec0c8;;
+}
 .login-form {
 	display: none;
 	width: 590px;
