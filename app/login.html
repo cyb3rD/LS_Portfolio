@@ -12,12 +12,14 @@
 	<meta name="keywords" content="front end portfolio">
 	<meta name="author" content="Nikolay Ignatev">
 	
-	<!--CSS -->
+	<!-- bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet"	href="bower/qTip2/jquery.qtip.css">
+	<!-- custom CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/content.css">
 	<link rel="stylesheet" href="css/login.css">
-	<link rel="stylesheet"	href="bower/qTip2/jquery.qtip.css">
+	
 	<!-- Fonts & favicon -->
 	<link rel="stylesheet" href="fonts/fira/fira.css">
 	<link rel="icon" type="image/png" href="img/favicon.png">
@@ -42,7 +44,7 @@
 				<label for="pwd" class="pwd-label">Введите пароль</label>
 				<input id="pwd" class="input-text" qtip-position="left" qtip-content="введите пароль" type="password" placeholder="Введите пароль">
 				<div class="text-label">
-				<button class="button-login" type="submit" value="Submit">Войти</button>
+				<button id="btn" class="button-login" type="submit" value="Submit">Войти</button>
 				</div>
 			</div>
 			
@@ -61,5 +63,5 @@
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
 	<script src="bower/qTip2/jquery.qtip.js"></script>
 	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-	<script src="js/login.js"></script>
+	<script src="js/myFormAction.js"></script>
 </body>
