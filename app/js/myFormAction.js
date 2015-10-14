@@ -4,15 +4,41 @@ var myFormAction = (function() {
 	
 	return {
 		//public methods
-		showForm: function() {
+		closeForm: function(myForm) {
+			$('.close-project').on('click', function(event) {
+				event.preventDefault();
+				console.log('Close "Add Project" Form');
+				$('.add-project-form').bPopup().close(); 
+				myFormAction.clearForm(myForm);
+			});
+		}, // closeform
+
+		showForm: function(myForm) {
 			var pwd = $('.pwd-label');
+			//Login Form
 			$('.login-form').bPopup({
 					opacity: 0.7,
 					speed: 950,
 					transition: 'slideDown',
 					transitionClose: 'slideUp',
-					onClose: function() { window.location.href = '/'; }
+					onClose: function() { 
+						myFormAction.clearForm(myForm);
+						window.location.href = '/'; }
 				});
+			//AddProject Form
+			$('.new').bind('click', function(e){
+	 			e.preventDefault();
+				$('.add-project-form').bPopup({
+					modalClose: false,
+					opacity: 0.7,
+					speed: 950,
+					transition: 'slideDown',
+					transitionClose: 'slideUp',
+					onClose: function() {
+						myFormAction.clearForm(myForm);
+					}
+				});
+			});
 
 			if (!Modernizr.input.placeholder) {
 				$('input, textarea').placeholder();
@@ -48,9 +74,9 @@ var myFormAction = (function() {
 		}, //isFormValid
 
 		validateForm: function(myForm) {
-			var _this = this;
+			//var _this = this;
 			myForm.on('submit', function(event) {
-				if (_this.isFormValid()) {
+				if (myFormAction.isFormValid()) {
 					// Validation complete
 					return;
 				} else {
@@ -59,6 +85,29 @@ var myFormAction = (function() {
 			});
 		}, //validateForm
 		
+		clearForm: function(myForm) {
+			myForm.on('reset', function() {
+				console.log('Clear Form!');
+				//TODO: Refactor
+				myForm.find('input, textarea').trigger('hideTooltip');
+				myForm.find('input, textarea').removeClass('error');
+			});
+		},
+		
+		fileUpload: function(myForm) {
+			$('#upload-file').on('change', function() {			
+				var input = $(this), 
+					// IE:
+					// need to use $(this).val() 
+					// instead input[0].files[0].name,
+					// TODO: remove fakepath with RegExp
+					fileName = input.val(),
+					fakeInput = $('#fake-upload');
+				console.log('Выбран файл: ' + fileName);
+				fakeInput.val(fileName);
+			});
+		},
+
 		createQtip: function (el, tipPos, tipTxt) {
 			if (tipPos === 'right') {
 				position = {
@@ -88,10 +137,10 @@ var myFormAction = (function() {
 				style: {
 					classes: 'qtip-rounded my-qtip-class',
 					tip: {
-            			corner: true,
-            			height: 9,
-            			width: 10
-        			}
+						corner: true,
+						height: 9,
+						width: 10
+					}
 				}
 			}).trigger('show');
 			el.addClass('error');
@@ -103,16 +152,17 @@ var myFormAction = (function() {
 				tipPos = el.attr('qtip-position'),
 				tipContent = el.attr('qtip-content');
 			
-			this.createQtip(el, tipPos, tipContent);
+			myFormAction.createQtip(el, tipPos, tipContent);
 		}, // ShowTip
 
 		init: function(myForm) {
-			console.log('Init of module');
 			var _this = this;
-			// Show Login Page
-			_this.showForm();
+			console.log('Init of module');
+			_this.showForm(myForm);
 			_this.validateForm(myForm);
-			//this.validateForm();
+			_this.clearForm(myForm);
+			_this.fileUpload(myForm);
+			_this.closeForm(myForm);
 		} // init 
 
 	} // return	

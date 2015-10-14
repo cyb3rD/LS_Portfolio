@@ -12,16 +12,26 @@
 	<meta name="keywords" content="front end portfolio">
 	<meta name="author" content="Nikolay Ignatev">
 	
-	<!--CSS -->
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<!-- Bower CSS -->
+	<!-- build:css css/vendor.min.css -->
+		<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<!-- endbuild -->
+
+	<!-- Dev CSS -->
+	<!-- build:css css/main.min.css -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/content.css">
-	<!-- Fonts & favicon -->
-	<link rel="stylesheet" href="fonts/fira/fira.css">
-	<link rel="icon" type="image/png" href="img/favicon.png">
-
-	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
 	
+	<!-- Fonts & favicon -->
+	<!-- build:css fonts/fonts.min.css -->
+	<link rel="stylesheet" href="fonts/fira/fira.css">
+	<!-- endbuild -->
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	
+	<!-- build:js js/modernizr.min.js -->
+	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
 	
 </head>
 <body>
@@ -190,5 +200,8 @@
 	</footer>
 
 	<!-- Vendor JS -->
-	<script src="bower/jquery/jquery.min.js"></script>
+	<script src="bower/jquery/jquery.js"></script>
+	
+	<!-- Custom JS -->
+	
 </body>

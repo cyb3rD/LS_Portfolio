@@ -11,9 +11,10 @@
 	<meta name="description" content="Nikolay Ignatev portfolio">
 	<meta name="keywords" content="front end portfolio">
 	<meta name="author" content="Nikolay Ignatev">
-	<title></title>
-	<!--CSS -->
+	<!-- Bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower/qTip2/jquery.qtip.css">
+	<!-- custom CSS -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/content.css">
 	<link rel="stylesheet" href="css/portfolio.css">
@@ -22,7 +23,7 @@
 	<link rel="stylesheet" href="fonts/fira/fira.css">
 	<link rel="icon" type="image/png" href="img/favicon.png">
 
-	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script type="text/javascript" src="bower/modernizr/modernizr.js"></script>
 	
 </head>
 <body>
@@ -32,20 +33,26 @@
 	
 	<div class="wrapper">
 		<!-- Begin Add Project Form -->
-		<form class="add-project-form" method="post" name="login_form">
-			<div class="add-project-header">Добавление проекта</div>
+		<form class="add-project-form" method="post" name="add_project_form">
+			<div class="add-project-header">Добавление проекта
+				<img class="close-project" src="img/close-button.png" alt="Close window" >
+			</div>
 			<div class="input-area">
 				<div class="text-label">Название проекта</div>
-				<input class="input input-text" type="text" placeholder="Введите название">
+				<input id="prj-name" qtip-position="left" qtip-content="введите название" class="input input-text" type="text" placeholder="Введите название">
 				<div class="text-label">Картинка проекта</div>
-				<div class="upload-image-form">
-					<div class="upload-button">Загрузите изображение</div>
-						<input class="hidden-form" type="file" name="upload">
-				</div>
+				<!--div class="upload-image-form"-->
+					<!-- div id="prj-foto" qtip-position="left" qtip-content="изображение" class="upload-button">Загрузите изображение</div -->
+					<div class="upload-image-form">
+						<input id="upload-file" class="hidden-form" type="file" name="upload">
+						<input id="fake-upload" qtip-position="left" qtip-content="изображение" class="upload-button" type="text" placeholder="Загрузите изображение" type="file" name="upload">
+					</div>
+
+				<!-- /div -->
 				<div class="text-label">URL проекта</div>
-				<input class="input input-text" type="text" placeholder="Добавьте ссылку">
+				<input id="prj-link" qtip-position="left" qtip-content="ссылка на проект" class="input input-text" type="text" placeholder="Добавьте ссылку">
 				<div class="text-label">Описание</div>
-				<textarea class="input input-text about-project" placeholder="Пара слов о вашем проекте"></textarea>
+				<textarea id="prj-description" qtip-position="left" qtip-content="описание проекта" class="input input-text about-project" placeholder="Пара слов о вашем проекте"></textarea>
 				<div class="button-wrap">
 					<button class="button-add" type="submit" value="Submit">Добавить</button>
 				</div>
@@ -182,5 +189,8 @@
 	<!-- Vendor JS -->
 	<script src="bower/jquery/jquery.min.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.min.js"></script>
-	<script src="js/add-project.js"></script>
+	<script src="bower/qTip2/jquery.qtip.js"></script>
+	<script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+	<!-- Custom JS -->
+	<script src="js/myFormAction.js"></script>
 </body>

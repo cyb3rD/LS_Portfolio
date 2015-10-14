@@ -5,6 +5,17 @@
 ::-webkit-input-placeholder {
     color: #48cbe8;;
 }
+.error {
+	border: 2px solid #f97e76 !important;
+	background: #fdd5d2;
+	
+}
+.error:-moz-placeholder {
+    color: #bec0c8;;
+}
+.error::-webkit-input-placeholder {
+    color: #bec0c8;;
+}
 .add-project-form {
 	display: none;
 	overflow: hidden;
@@ -31,9 +42,19 @@
 	font-size: 25px;
 	font-weight: normal;
 	border-bottom: 10px solid #67dffa;
-	background-image: url('../img/close-button.png');
+	/*background-image: url('../img/close-button.png');
 	background-repeat: no-repeat;
-	background-position: 95% center;
+	background-position: 95% center;*/
+}
+.close-project {
+	width: 25px;
+	height: 25px;
+	float: right;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+.close-project:hover{
+	cursor: pointer;
 }
 .input-area {
 	width: 320px;
@@ -91,27 +112,37 @@
     color: #48cbe8;
 	font-family: 'fira_sanslight';
 	font-size: 13px;
+	/*height: 40px;
 	background: white;
 	border: 1px solid #48cbe8;
 	border-radius: 4px;
-	margin-bottom: 5px;
+	margin-bottom: 5px;*/
 }
  /* Фэйковая кнопка загрузки файла */
  .upload-image-form .upload-button { 
+		    box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: #48cbe8;
+	font-family: 'fira_sanslight';
+	font-size: 13px;
 	padding-left: 10px;
+	border: 1px solid #48cbe8;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	height: 40px;
     line-height: 40px;
     background-image: url('../img/upload-image.png');
 	background-repeat: no-repeat;
 	background-position: right center;
-	height: 100%;
+	width: 100%;
 }
  /* Реальная прозрачная форма*/
 .upload-image-form .hidden-form{
     opacity: 0;
     filter: alpha(opacity:0);
+    cursor: pointer;
     position: absolute;
-
-    margin-top: -39px;
     margin-left: 255px;
     height: 40px;
     width: 55px;
