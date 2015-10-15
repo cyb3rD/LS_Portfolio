@@ -17,6 +17,7 @@
     color: #bec0c8;;
 }
 .login-form {
+	z-index: 99;
 	display: block;
 	margin: auto;
 	width: 590px;

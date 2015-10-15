@@ -10,12 +10,12 @@ var myFormAction = (function() {
 	function _closeForm(myForm) {
 		_closeProject.on('click', function(event) {
 			event.preventDefault();
-			console.log('Close "Add Project" Form');
+			//console.log('Close "Add Project" Form');
 			_formProject.bPopup().close(); 
 			myForm.trigger('reset');
 			$('input[type=text], textarea').each(function() {
 				var input = $(this);
-				console.log('Clear "Add Project" Data');
+				//console.log('Clear "Add Project" Data');
 				input.val('');
 			});
 		});
@@ -56,12 +56,12 @@ var myFormAction = (function() {
 			var input = $(this),
 				id = $(this).attr('id');
 			// Debug info:
-			console.log("Field: " + id + " | Value: " + input.val());
+			//console.log("Field: " + id + " | Value: " + input.val());
 			//check for empty string!
 			if ((input.val() === "") && (id !== "upload-file")) {
 				//Show Tip
 				_showQtip(id);	
-				console.log(id);
+				//console.log(id);
 				$('#' + id).keydown(function() {
 					$('#' + id).removeClass('error');
 				});
@@ -86,7 +86,7 @@ var myFormAction = (function() {
 	function _clearForm(myForm, isFormClosed) {
 		//var isFormClosed = false;
 		myForm.on('reset', function() {
-			console.log('Clear Form!');
+			//console.log('Clear Form!');
 			//TODO: Refactor
 			myForm.find('input, textarea').trigger('hideTooltip');
 			myForm.find('input, textarea').removeClass('error');
@@ -102,7 +102,7 @@ var myFormAction = (function() {
 				// TODO: remove fakepath with RegExp
 				fileName = input.val(),
 				fakeInput = $('#fake-upload');
-			console.log('Выбран файл: ' + fileName);
+			//console.log('Выбран файл: ' + fileName);
 			fakeInput.val(fileName);
 		});
 	}; // fileUpload
@@ -157,7 +157,7 @@ var myFormAction = (function() {
 		//public methods
 		init: function(myForm) {
 			//var _this = this;
-			console.log('Init of module');
+			//console.log('Init of module');
 			_showForm(myForm);
 			_validateForm(myForm);
 			_clearForm(myForm);
