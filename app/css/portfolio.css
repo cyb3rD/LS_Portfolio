@@ -34,15 +34,14 @@
 }
 
 /* BEGIN Hover effect over project */
-.wrap-img:hover .more-info  {
+.project:hover .more-info  {
 	display: block;
-    cursor: pointer;
-    /* Doesn't work for IE8 */
+     /* Doesn't work for IE8 */
 	/*-ms-transform: translate(45px,45px); 
    	-webkit-transform: translate(45px,45px); 
     transform: translate(45px,45px);*/
 }
-.wrap-img:hover  .img-preview {
+.project:hover  .img-preview {
 	opacity: 0.2;
 }/* END Hover effect over project */
 
