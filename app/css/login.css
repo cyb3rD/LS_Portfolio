@@ -17,9 +17,17 @@
     color: #bec0c8;;
 }
 .login-form {
-	display: none;
+	display: block;
+	margin: auto;
 	width: 590px;
 	height: 490px;
+	/*Alignment @ center*/
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	
 	background: #eff3f7;
 
 	-webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);

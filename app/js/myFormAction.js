@@ -4,7 +4,6 @@ var myFormAction = (function() {
 	var _closeProject = $('.close-project'),
 		_formProject = $('.add-project-form');
 		_pwdPlaceholder = $('.pwd-label'),
-		_loginForm = $('.login-form'),
 		_addProjectField = $('.new'),
 		_inputPlaceholder = $('input, textarea');
 	
@@ -23,20 +22,6 @@ var myFormAction = (function() {
 	}; // closeform
 
 	function _showForm(myForm) {
-		_loginForm.bPopup({
-				opacity: 0.7,
-				speed: 950,
-				transition: 'slideDown',
-				transitionClose: 'slideUp',
-				onClose: function() { 
-					myForm.trigger('reset');
-					$("form  :input").each(function() {
-						var input = $(this);
-						console.log('Clear "Login Form" Data');
-						input.val('');
-					});
-					window.location.href = '/'; }
-			});
 		//AddProject Form
 		_addProjectField.bind('click', function(e){
  			e.preventDefault();
