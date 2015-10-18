@@ -49,7 +49,7 @@
 .error {
 	border: 2px solid #f97e76 !important;
 	background: #fdd5d2;
-	
+	color: #bec0c8 !important;
 }
 .error:-moz-placeholder {
     color: #bec0c8;;

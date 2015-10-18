@@ -2,16 +2,17 @@
 var myFormAction = (function() {
 	//private module area
 	var _closeProject = $('.close-project'),
-		_formProject = $('.add-project-form');
+		_formProject = $('.add-project-form'),
 		_pwdPlaceholder = $('.pwd-label'),
 		_addProjectField = $('.new'),
-		_inputPlaceholder = $('input, textarea');
-	
+		_inputPlaceholder = $('input, textarea'),
+		_emailField = $('#mail');
+
 	function _closeForm(myForm) {
 		_closeProject.on('click', function(event) {
 			event.preventDefault();
 			//console.log('Close "Add Project" Form');
-			_formProject.bPopup().close(); 
+			_formProject.bPopup().close();
 			myForm.trigger('reset');
 			$('input[type=text], textarea').each(function() {
 				var input = $(this);
@@ -19,7 +20,7 @@ var myFormAction = (function() {
 				input.val('');
 			});
 		});
-	}; // closeform
+	} // closeform
 
 	function _showForm(myForm) {
 		//AddProject Form
@@ -47,29 +48,37 @@ var myFormAction = (function() {
 			});
 		}
 
-	}; // showForm
+	} // showForm
 
 	function _isFormValid() {
 		// Default - form is valid
-		var isValid = true;
+		var isValid = true,
+			// RegExp for e-mail
+			pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i,
+			isMailValid = pattern.test(_emailField.val());
+		// Check for valid e-mail!
+		if  ( !isMailValid ) {
+			_showQtip("mail");
+			isValid = false;
+		}			
+		// Check for enpty fields
 		$("form  :input").each(function() {
 			var input = $(this),
 				id = $(this).attr('id');
 			// Debug info:
 			//console.log("Field: " + id + " | Value: " + input.val());
-			//check for empty string!
-			if ((input.val() === "") && (id !== "upload-file")) {
+			// Check for empty strings
+			if ( (input.val() === "") && (id !== "upload-file") ) {
 				//Show Tip
-				_showQtip(id);	
-				//console.log(id);
-				$('#' + id).keydown(function() {
+				_showQtip(id);
+				$('#' + id).keydown(function () {
 					$('#' + id).removeClass('error');
 				});
 				isValid = false;
 			}
 		});
 		return isValid;
-	}; // isFormValid
+	} // isFormValid
 
 	function _validateForm(myForm) {
 		//var _this = this;
@@ -81,8 +90,8 @@ var myFormAction = (function() {
 				event.preventDefault();
 			};
 		});
-	}; // validateForm
-	
+	} // validateForm
+
 	function _clearForm(myForm, isFormClosed) {
 		//var isFormClosed = false;
 		myForm.on('reset', function() {
@@ -91,13 +100,13 @@ var myFormAction = (function() {
 			myForm.find('input, textarea').trigger('hideTooltip');
 			myForm.find('input, textarea').removeClass('error');
 		});
-	}; // clearForm
-	
+	} // clearForm
+
 	function _fileUpload(myForm) {
-		$('#upload-file').on('change', function() {			
-			var input = $(this), 
+		$('#upload-file').on('change', function() {
+			var input = $(this),
 				// IE:
-				// need to use $(this).val() 
+				// need to use $(this).val()
 				// instead input[0].files[0].name,
 				// TODO: remove fakepath with RegExp
 				fileName = input.val(),
@@ -105,7 +114,7 @@ var myFormAction = (function() {
 			//console.log('Выбран файл: ' + fileName);
 			fakeInput.val(fileName);
 		});
-	}; // fileUpload
+	} // fileUpload
 
 	function _createQtip(el, tipPos, tipTxt) {
 		if (tipPos === 'right') {
@@ -143,15 +152,15 @@ var myFormAction = (function() {
 			}
 		}).trigger('show');
 		el.addClass('error');
-	}; // creqteQtip
+	} // creqteQtip
 
 	function _showQtip(id) {
 		var el = $('#' + id),
 			tipPos = el.attr('qtip-position'),
 			tipContent = el.attr('qtip-content');
-		
+
 		_createQtip(el, tipPos, tipContent);
-	}; // ShowTip
+	} // ShowTip
 
 	return {
 		//public methods
@@ -163,9 +172,9 @@ var myFormAction = (function() {
 			_clearForm(myForm);
 			_fileUpload(myForm);
 			_closeForm(myForm);
-		} // init 
+		} // init
 
-	} // return	
+	}; // return
 } ());
 
 $(document).ready(function() {

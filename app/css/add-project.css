@@ -8,7 +8,6 @@
 .error {
 	border: 2px solid #f97e76 !important;
 	background: #fdd5d2;
-	
 }
 .error:-moz-placeholder {
     color: #bec0c8;;
@@ -33,8 +32,7 @@
 	height: 40px;
 	margin: 0px;
 	margin-bottom: 10px;
-	padding: 0px;
-	padding-left: 10px;
+	padding: 0px 0px 0px 10px;
 	background: #48cbe8;
 	line-height: 44px;
 	color: white;
