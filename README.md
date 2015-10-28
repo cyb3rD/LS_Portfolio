@@ -12,11 +12,11 @@ This is example of the Portfolio Homework @ LoftSchool 09-2015 course
 
 Fix Buggs
 
-1. Popup must open at the same page with button "add project"
+~~1. Popup must open at the same page with button "add project"
 
-2. Doesn't work upload image button
+~~2. Doesn't work upload image button
 
-3. Satandalone page for the authorisation http://joxi.ru/bmoBjj3SBqXRry 
+~~3. Satandalone page for the authorisation http://joxi.ru/bmoBjj3SBqXRry 
 
 #ToDo:  
 
